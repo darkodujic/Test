@@ -30,15 +30,11 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-
-    -webkit-transform: translate(-50%, -50%) scale(1.5)
-      rotate3d(2.3, 0, 0, 40deg);
-
+    -webkit-transform: translate(-50%, -50%) scale(1.5) rotate3d(2.3, 0, 0, 40deg);
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: -15px;
     font-family: fantasy;
-
     line-height: 1.1;
     cursor: pointer;
 
