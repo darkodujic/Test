@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-size: 100%;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 80%;
+  }
+
+  @media only screen and (max-width: 505px) {
+    font-size: 70%;
+  }
+}
+
+.vitamin {
+  background-color: rgb(7, 7, 7);
+
+  &__container {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%) scale(1.5)
+      rotate3d(2.3, 0, 0, 40deg);
+
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -15px;
+    font-family: fantasy;
+
+    line-height: 1.1;
+    cursor: pointer;
+
+    @media only screen and (max-width: 900px) {
+      letter-spacing: -10px;
+      line-height: 1;
+    }
+
+    @media only screen and (max-width: 530px) {
+      left: 45%;
+    }
+
+    @media only screen and (max-width: 505px) {
+      letter-spacing: -8px;
+    }
+
+    @media only screen and (max-width: 395px) {
+      left: 39%;
+    }
+
+    @media only screen and (max-width: 355px) {
+      -webkit-transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+  &--first {
+    transform: scale(0.52);
+    margin-bottom: -1.4rem;
+
+    @media only screen and (max-width: 335px) {
+      margin-left: 3.3rem;
+    }
+  }
+
+  &--second {
+    transform: scale(0.65);
+    margin-bottom: -0.8rem;
+
+    @media only screen and (max-width: 611px) {
+      width: 120%;
+    }
+
+    @media only screen and (max-width: 530px) {
+      margin-left: -1rem;
+    }
+
+    @media only screen and (max-width: 460px) {
+      width: 130%;
+    }
+
+    @media only screen and (max-width: 350px) {
+      margin-left: -2rem;
+      width: 150%;
+    }
+  }
+
+  &--third {
+    transform: scale(0.75);
+    margin-top: 0.7rem;
+
+    @media only screen and (max-width: 460px) {
+      width: 120%;
+      position: relative;
+      left: -5%;
+    }
+
+    @media only screen and (max-width: 355px) {
+      left: -10%;
+    }
+  }
+
+  &--fourth {
+    transform: scale(1);
+    margin-top: 1rem;
+
+    @media only screen and (max-width: 335px) {
+      margin-left: 2rem;
+    }
+  }
+
+  &--letter,
+  &--letter__first {
+    transition: all 0.8s;
+    //transform: scale3d(1, 1.2, 2) rotate3d(1, 0, 0, 53deg);
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 4px 4px;
+    color: rgb(255, 228, 78);
+  }
+
+  &--letter {
+    &__first {
+      text-transform: uppercase;
+    }
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__space {
+    margin-left: 2rem;
+  }
+
+  &__center {
+    text-align: center;
+  }
+}
+
+#letter {
+  transition: all 0.8s;
+  display: inline-block;
+  z-index: 50000;
+  margin: 0 -0.5rem;
+  padding: 0 0.7rem;
+}
+
+.fullAnimation {
+  animation: bounce 0.5s linear alternate 0.005s;
+  color: rgb(6, 128, 6);
+}
+
+/* @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+     
+      transform: translate3d(0,0,0);
+    }
+  
+    40% {
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      transform: translate3d(0, 0px, 0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0,0);
+    }
+  }
+*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0.65rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg);
+  }
+
+  50% {
+    transform: translateY(-1rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg);
+  }
+
+  70% {
+    transform: translateY(-0.3rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg);
+  }
+
+  100% {
+    transform: translateY(0rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg);
+  }
+}
+

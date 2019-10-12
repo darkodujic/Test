@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-size: 100%; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 80%; } }
+  @media only screen and (max-width: 505px) {
+    html {
+      font-size: 70%; } }
+
+.vitamin {
+  background-color: #070707; }
+  .vitamin__container {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.5) rotate3d(2.3, 0, 0, 40deg);
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -15px;
+    font-family: fantasy;
+    line-height: 1.1;
+    cursor: pointer; }
+    @media only screen and (max-width: 900px) {
+      .vitamin__container {
+        letter-spacing: -10px;
+        line-height: 1; } }
+    @media only screen and (max-width: 530px) {
+      .vitamin__container {
+        left: 45%; } }
+    @media only screen and (max-width: 505px) {
+      .vitamin__container {
+        letter-spacing: -8px; } }
+    @media only screen and (max-width: 395px) {
+      .vitamin__container {
+        left: 39%; } }
+    @media only screen and (max-width: 355px) {
+      .vitamin__container {
+        -webkit-transform: translate(-50%, -50%) scale(1.2); } }
+  .vitamin--first {
+    transform: scale(0.52);
+    margin-bottom: -1.4rem; }
+    @media only screen and (max-width: 335px) {
+      .vitamin--first {
+        margin-left: 3.3rem; } }
+  .vitamin--second {
+    transform: scale(0.65);
+    margin-bottom: -0.8rem; }
+    @media only screen and (max-width: 611px) {
+      .vitamin--second {
+        width: 120%; } }
+    @media only screen and (max-width: 530px) {
+      .vitamin--second {
+        margin-left: -1rem; } }
+    @media only screen and (max-width: 460px) {
+      .vitamin--second {
+        width: 130%; } }
+    @media only screen and (max-width: 350px) {
+      .vitamin--second {
+        margin-left: -2rem;
+        width: 150%; } }
+  .vitamin--third {
+    transform: scale(0.75);
+    margin-top: 0.7rem; }
+    @media only screen and (max-width: 460px) {
+      .vitamin--third {
+        width: 120%;
+        position: relative;
+        left: -5%; } }
+    @media only screen and (max-width: 355px) {
+      .vitamin--third {
+        left: -10%; } }
+  .vitamin--fourth {
+    transform: scale(1);
+    margin-top: 1rem; }
+    @media only screen and (max-width: 335px) {
+      .vitamin--fourth {
+        margin-left: 2rem; } }
+  .vitamin--letter, .vitamin--letter__first {
+    transition: all 0.8s;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 4px 4px;
+    color: #ffe44e; }
+  .vitamin--letter__first {
+    text-transform: uppercase; }
+  .vitamin__flex {
+    display: flex; }
+  .vitamin__space {
+    margin-left: 2rem; }
+  .vitamin__center {
+    text-align: center; }
+
+#letter {
+  transition: all 0.8s;
+  display: inline-block;
+  z-index: 50000;
+  margin: 0 -0.5rem;
+  padding: 0 0.7rem; }
+
+.fullAnimation {
+  animation: bounce 0.5s linear alternate 0.005s;
+  color: #068006; }
+
+/* @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+     
+      transform: translate3d(0,0,0);
+    }
+  
+    40% {
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      transform: translate3d(0, 0px, 0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0,0);
+    }
+  }
+*/
+@keyframes bounce {
+  0% {
+    transform: translateY(0.65rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg); }
+  50% {
+    transform: translateY(-1rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg); }
+  70% {
+    transform: translateY(-0.3rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg); }
+  100% {
+    transform: translateY(0rem) scale3d(1, 1.2, 2) rotate3d(2, 0, 0, 42deg); } }
