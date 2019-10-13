@@ -1,0 +1,6 @@
+# TO START A PROJECT, PLEASE RUN: 
+
+ * NPM INSTALL,
+ * NPM START ( LIVE SERVER)
+ 
+# Thank you!
